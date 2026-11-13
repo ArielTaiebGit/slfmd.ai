@@ -21,29 +21,138 @@
 <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></symbol>
+<symbol id="i-insta" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor"/></symbol>
+<symbol id="i-coffee" viewBox="0 0 24 24"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9Z"/><path d="M17 11h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 3v3M12 3v3"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10Z"/></symbol>
+<symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="m5.6 5.6 3.9 3.9M14.5 14.5l3.9 3.9M18.4 5.6l-3.9 3.9M9.5 14.5l-3.9 3.9"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4.2A8 8 0 1 1 20 12Z"/></symbol>
+<symbol id="i-apps" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/></symbol>
+<symbol id="i-hammer" viewBox="0 0 24 24"><path d="m14 6 4 4M11.5 8.5l-7 7a1.8 1.8 0 0 0 2.5 2.5l7-7"/><path d="m12 5 3-2 6 6-2 3-3-1-3-3Z"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M18 6l-2.5 2.5M8.5 15.5 6 18"/></symbol>
+<symbol id="i-type" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M7 10h.01M11 10h.01M15 10h.01M8 14h8"/></symbol>
+<symbol id="i-film" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M7 4v16M17 4v16M3 9h4M3 15h4M17 9h4M17 15h4"/></symbol>
+<symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2l2.2 11h10.6L20 7H6.2"/><circle cx="9" cy="19" r="1.3"/><circle cx="17" cy="19" r="1.3"/></symbol>
+<symbol id="i-gift" viewBox="0 0 24 24"><rect x="4" y="9" width="16" height="11" rx="2"/><path d="M3 9h18M12 9v11M12 9S10.5 4 8 4.5 7.5 9 12 9Zm0 0s1.5-5 4-4.5S16.5 9 12 9Z"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.4"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="2.5"/><path d="M8 10V7.5a4 4 0 0 1 8 0V10"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M11 18.5h2"/></symbol>
+<symbol id="i-game" viewBox="0 0 24 24"><path d="M7 8h10a4 4 0 0 1 3.9 4.9l-.8 3.3a2.4 2.4 0 0 1-4.2.9L14.5 15h-5l-1.4 2.1a2.4 2.4 0 0 1-4.2-.9l-.8-3.3A4 4 0 0 1 7 8Z"/><path d="M8 11v3M6.5 12.5h3M15.5 12h.01M17.5 13.5h.01"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol>
+</svg>
+<a class="skip" href="#main">Skip to content</a>
 <header class="bar">
 <a class="brand" href="/" aria-label="SLFMD.AI home"><img src="/assets/mark-96.png" alt=""><span>SLFMD.AI</span></a>
-<nav><a href="/#apps">Apps</a><a href="/#next">Coming soon</a><a href="/contact/">Contact</a><a href="https://ko-fi.com/slfmdai" rel="noopener">Support</a></nav>
+<nav aria-label="Main"><a href="/#apps" aria-current="page">Apps</a><a href="/wholeinone/" class="hide-sm">Whole in One</a><a href="/contact/">Contact</a><a href="https://www.instagram.com/slfmd.ai/" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#i-insta"/></svg></a><a class="cta" href="https://ko-fi.com/slfmdai" rel="noopener"><svg class="icon"><use href="#i-coffee"/></svg><span class="hide-sm">Support</span></a></nav>
 </header>
-<main>
+<main id="main" class="wide">
 <section class="hero">
-<picture><source srcset="/assets/slfmd-hero-alpha.webp" type="image/webp"><img src="/assets/slfmd-hero-alpha.png" width="786" height="920" alt="A low-poly figure carving itself out of rock with a hammer and chisel"></picture>
-<h1 class="wordmark">SLFMD.AI</h1>
-<p class="muted">Self-made software. Small, careful apps, carved one detail at a time.</p>
-</section>
-<h2 id="apps">Apps</h2>
-<a class="card" href="/wholeinone/"><img src="/wholeinone/img/icon.png" alt=""><div><strong>Whole in One</strong><br><span class="muted">All your lists in one app: to-dos, groceries, films and shows, games, books, gifts.</span><br><span class="pill">Coming soon · iPhone, iPhone Duo and Mac</span></div></a>
-<h2 id="next">Coming soon…</h2>
-<div class="grid">
-<div class="tease"><span class="status">This winter</span><h3>Whole in One on iPhone and Mac</h3><p>Heading to the App Store, for iPhone (iPhone Duo included) and Macs with Apple silicon. Free, no account, synced through your own iCloud.</p></div>
-<div class="tease"><span class="status">2027</span><h3>Whole in One for Android</h3><p>The same lists on Android phones, with sync through Google Drive.</p></div>
-<div class="tease"><span class="status">On the bench</span><h3>A second app</h3><p>Another tool made for one person first, then polished until it is worth sharing. Not ready to show yet.</p></div>
-<div class="tease"><span class="status">In the forge</span><h3>Games</h3><p>Fifteen years of making games for others. A few small ones of our own are taking shape.</p></div>
+<div>
+<span class="eyebrow">Whole in One · in App Store review</span>
+<h1>Self-made <span class="gold-text">software.</span></h1>
+<p class="lede">Small, careful apps from a one-person studio in Barcelona, carved one detail at a time.</p>
+<div class="actions"><a class="button" href="/wholeinone/">Meet Whole in One <svg class="icon"><use href="#i-arrow"/></svg></a><a class="button ghost" href="https://www.instagram.com/slfmd.ai/" rel="noopener"><svg class="icon"><use href="#i-insta"/></svg> Follow on Instagram</a></div>
 </div>
-<h2>About</h2>
-<p>SLFMD.AI is a one-person studio in Barcelona, run by Ariel, a game designer with fifteen years across AAA, free-to-play and iGaming. The name says it: self-made. Everything here is designed, built and supported by hand, with AI as the chisel.</p>
-<div class="actions"><a class="button" href="/contact/">Get in touch</a><a class="button ghost" href="https://ko-fi.com/slfmdai" rel="noopener">☕ Buy me a coffee</a></div>
+<figure><picture><source srcset="/assets/slfmd-hero-alpha.webp" type="image/webp"><img src="/assets/slfmd-hero-alpha.png" width="786" height="920" alt="A low-poly figure carving itself out of rock with a hammer and chisel"></picture></figure>
+</section>
+
+<div class="tabs" role="tablist" aria-label="Sections" id="apps">
+<button role="tab" id="t-apps" aria-controls="p-apps" aria-selected="true"><svg class="icon"><use href="#i-apps"/></svg>Apps <span class="count">1</span></button>
+<button role="tab" id="t-next" aria-controls="p-next" aria-selected="false" tabindex="-1"><svg class="icon"><use href="#i-hammer"/></svg>In the works <span class="count">4</span></button>
+<button role="tab" id="t-studio" aria-controls="p-studio" aria-selected="false" tabindex="-1"><svg class="icon"><use href="#i-spark"/></svg>Studio</button>
+</div>
+
+<section role="tabpanel" id="p-apps" aria-labelledby="t-apps">
+<article class="feature">
+<div>
+<div class="app-id"><img src="/wholeinone/img/icon.png" alt=""><div><h3>Whole in One</h3><div class="meta"><span class="tag">App</span><span>iPhone · iPhone Duo · Mac</span><span>English, French, Spanish</span></div></div></div>
+<p class="muted">All your lists in one app. Type anything, it finds its list.</p>
+<ul class="ilist">
+<li><svg class="icon"><use href="#i-type"/></svg><span><strong>One capture bar.</strong> "Milk and eggs", "Severance", "lent Mario Galaxy to Thierry": each line lands where it belongs.</span></li>
+<li><svg class="icon"><use href="#i-film"/></svg><span><strong>Films, shows, games, books</strong> with covers, episodes left and time watched, and a roulette for tonight.</span></li>
+<li><svg class="icon"><use href="#i-cart"/></svg><span><strong>Groceries</strong> by aisle and by season, that learn what you buy.</span></li>
+<li><svg class="icon"><use href="#i-pin"/></svg><span><strong>Trips and places</strong> on a map: where you have been, where you want to go.</span></li>
+<li><svg class="icon"><use href="#i-gift"/></svg><span><strong>Gift ideas per person</strong>, recommendations, to-dos and the things you lent.</span></li>
+<li><svg class="icon"><use href="#i-lock"/></svg><span><strong>Free, no account, no ads.</strong> Your lists stay on your phone and sync through your own iCloud.</span></li>
+</ul>
+<div class="actions"><a class="button" href="/wholeinone/">See the app</a><span class="pill live">In App Store review</span></div>
+</div>
+<div class="strip">
+<img src="/wholeinone/img/1_home.webp" width="402" height="874" alt="Home with today's lists" loading="lazy">
+<img src="/wholeinone/img/2_watch.webp" width="402" height="874" alt="Watch list with posters and episodes left" loading="lazy">
+<img src="/wholeinone/img/4_capture.webp" width="402" height="874" alt="Typing one line that goes to the right list" loading="lazy">
+</div>
+</article>
+</section>
+
+<section role="tabpanel" id="p-next" aria-labelledby="t-next" hidden>
+<div class="panel-head" id="next"><h2>In the works</h2><p>What is on the bench, roughly in order.</p></div>
+<div class="cards two">
+<a class="tile" href="mailto:support@slfmd.ai?subject=Android%20tester"><div class="badge"><svg class="icon"><use href="#i-phone"/></svg></div><div class="meta"><span class="tag">This winter</span></div><h3>Whole in One for Android</h3><p>The same lists on Android phones. A closed test opens first: write to be one of the testers.</p><span class="go">Become a tester <svg class="icon"><use href="#i-arrow"/></svg></span></a>
+<div class="tile"><div class="badge"><svg class="icon"><use href="#i-heart"/></svg></div><div class="meta"><span class="tag">2027</span></div><h3>Shared lists</h3><p>Groceries and plans shared with a partner or a household, the same lists on iPhone and Android, and a taste match between friends. Free.</p></div>
+<div class="tile"><div class="badge"><svg class="icon"><use href="#i-hammer"/></svg></div><div class="meta"><span class="tag">On the bench</span></div><h3>A second app</h3><p>Another tool made for one person first, then polished until it is worth sharing. Not ready to show yet.</p></div>
+<div class="tile"><div class="badge"><svg class="icon"><use href="#i-game"/></svg></div><div class="meta"><span class="tag">In the forge</span></div><h3>Games</h3><p>Fifteen years of making games for others. A few small ones of our own are taking shape.</p></div>
+</div>
+</section>
+
+<section role="tabpanel" id="p-studio" aria-labelledby="t-studio" hidden>
+<div class="studio" id="studio">
+<div>
+<h2 style="margin-top:0">A one-person studio</h2>
+<p class="muted">SLFMD.AI is run by Ariel, a game designer with fifteen years across AAA, free-to-play and iGaming. The name says it: self-made. Everything here is designed, built and supported by hand, with AI as the chisel.</p>
+<p class="muted">Every message is read by a person. Ideas from people who use the apps go straight into the next update.</p>
+<div class="actions"><a class="button" href="/contact/">Get in touch</a><a class="button ghost" href="https://ko-fi.com/slfmdai" rel="noopener"><svg class="icon"><use href="#i-coffee"/></svg> Buy me a coffee</a></div>
+</div>
+<div class="stats">
+<div class="stat"><b>15</b><span>years making games</span></div>
+<div class="stat"><b>1</b><span>person, start to finish</span></div>
+<div class="stat"><b>3</b><span>languages: English, French, Spanish</span></div>
+<div class="stat"><b>0</b><span>ads and accounts</span></div>
+</div>
+</div>
+</section>
+<script>
+(() => {
+  const tabs = [...document.querySelectorAll('[role="tab"]')];
+  const show = (t, focus) => {
+    tabs.forEach((b) => {
+      const on = b === t;
+      b.setAttribute('aria-selected', on);
+      b.tabIndex = on ? 0 : -1;
+      document.getElementById(b.getAttribute('aria-controls')).hidden = !on;
+    });
+    if (focus) t.focus();
+  };
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => show(t));
+    t.addEventListener('keydown', (e) => {
+      const d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+      if (d) show(tabs[(i + d + tabs.length) % tabs.length], true);
+    });
+  });
+  // links to #next or #studio open their tab
+  const open = () => {
+    const id = location.hash.slice(1);
+    const t = { next: 't-next', studio: 't-studio', apps: 't-apps' }[id];
+    if (t) show(document.getElementById(t));
+  };
+  window.addEventListener('hashchange', open);
+  open();
+})();
+</script>
 </main>
-<footer><img src="/assets/mark-96.png" alt=""><span>© 2026 SLFMD.AI · Made in Barcelona by Ariel · <a href="/contact/">Contact</a> · <a href="https://ko-fi.com/slfmdai" rel="noopener">Buy me a coffee</a></span></footer>
+
+<footer>
+<div class="cols">
+<div><div class="sign"><img src="/assets/mark-96.png" alt=""><strong>SLFMD.AI</strong></div><p style="margin:10px 0 0">Self-made software from Barcelona. Small, careful apps, carved one detail at a time.</p>
+<div class="social"><a href="https://www.instagram.com/slfmd.ai/" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#i-insta"/></svg></a><a href="mailto:contact@slfmd.ai" aria-label="Email"><svg class="icon"><use href="#i-mail"/></svg></a><a href="https://ko-fi.com/slfmdai" rel="noopener" aria-label="Ko-fi"><svg class="icon"><use href="#i-coffee"/></svg></a></div></div>
+<div><h3>Apps</h3><ul><li><a href="/wholeinone/">Whole in One</a></li><li><a href="/wholeinone/support/">Help</a></li><li><a href="/wholeinone/privacy/">Privacy</a></li></ul></div>
+<div><h3>Studio</h3><ul><li><a href="/#studio">About</a></li><li><a href="/#next">In the works</a></li><li><a href="https://ko-fi.com/slfmdai" rel="noopener">Buy me a coffee</a></li></ul></div>
+<div><h3>Connect</h3><ul><li><a href="/contact/">Contact</a></li><li><a href="mailto:support@slfmd.ai">support@slfmd.ai</a></li><li><a href="https://www.instagram.com/slfmd.ai/" rel="noopener">Instagram</a></li></ul></div>
+</div>
+<div class="sign">© 2026 SLFMD.AI · Made in Barcelona by Ariel</div>
+</footer>
 </body>
 </html>
