@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "ai.slfmd.wholeinone",
+      "sha256_cert_fingerprints": [
+        "89:79:B1:2A:85:39:5F:0F:7C:33:8B:FE:1F:D6:25:D7:4E:4A:D6:50:64:D2:16:D3:6C:7E:57:AF:FB:3B:B0:E1",
+        "3A:56:E4:96:11:FE:07:1D:C4:FC:B2:3F:1F:2C:65:30:31:77:BB:B5:B8:6C:86:1D:11:38:CE:30:99:94:32:FA"
+      ]
+    }
+  }
+]
